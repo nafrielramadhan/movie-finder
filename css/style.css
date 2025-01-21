@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Helvetica-bold;
+  src: url(../assets/Helvetica-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: none;
+  background: transparent;
+  color: white;
+}
+
+b {
+  font-family: Helvetica-bold;
+}
+
+body {
+  background-color: rgb(13, 13, 13);
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.title-text {
+  font-family: Helvetica-bold;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+  font-size: 110px;
+  place-self: center;
+}
+
+/* Search Box & Search Item */
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-box {
+  place-self: center;
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(135, 135, 135);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.search-list {
+  place-self: center;
+  width: 470px;
+  background-color: rgb(135, 135, 135);
+  position: absoulte;
+  overflow-y: scroll;
+  max-height: 300px;
+  z-index: 10;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.search-list .search-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: solid rgb(101, 101, 101) 0.1px;
+}
+
+.search-list :hover {
+  background-color: #0a866c;
+}
+
+.search-item-thumbnail img {
+  width: 70px;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+.search-list h3 {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 15px;
+  color: white;
+}
+
+.search-list p {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: white;
+}
+
+.search-box input {
+  font-family: "Space Grotesk", serif;
+  background: transparent;
+  width: fit-content;
+  color: #f5f5f5;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.search-box button {
+  cursor: pointer;
+  color: #f5f5f5;
+  background: transparent;
+  font-size: 22px;
+}
+
+.search-box ::placeholder {
+  cursor: pointer;
+  color: rgb(70, 68, 68);
+  background: transparent;
+  font-family: "Space Grotesk", serif;
+  font-size: large;
+  font-weight: lighter;
+}
+
+/* make gradient text (src: GeeksForGeeks */
+gradient-text {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* For next js */
+.hide-search-list {
+  display: none;
+}
+
+/* Movie Result */
+.result-container {
+  padding: 2rem 0;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+
+.movie-poster img {
+  max-width: 320px;
+  border-radius: 5px;
+}
+
+.movie-info {
+  text-align: left;
+  font-size: 17px;
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.movie-title {
+  font-family: Helvetica-bold;
+  font-size: 50px;
+  color: #70ffc3;
+}
+
+.movie-general-info {
+  list-style-type: none;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+.year {
+  margin-right: 1rem;
+}
+
+.rated {
+  margin-right: 1rem;
+}
+
+.released {
+  margin-right: 1rem;
+}
+
+.genre {
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
+  font-weight: lighter;
+  background-color: rgb(112, 255, 195, 0.4);
+  display: inline-block;
+  padding: 6px;
+  border-radius: 4px;
+}
+.writer {
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
+  font-weight: lighter;
+}
+.actor {
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
+  font-weight: lighter;
+}
+.plot {
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
+  font-weight: lighter;
+  text-align: justify;
+}

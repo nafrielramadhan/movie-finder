@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafriel - Assignment 2</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76516ad392.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Start WHOLE Container -->
+    <div class="container">
+      <div class="title">
+        <h1 class="title-text"><gradient-text>Movie </gradient-text>Finder</h1>
+      </div>
+
+      <!-- Start of Search Container -->
+      <div class="search-container">
+        <div class="search-element">
+          <div class="search-box">
+            <input
+              class="search"
+              type="text"
+              id="movie-search-box"
+              onkeyup="findMovies()"
+              onclick="findMovies()"
+              placeholder="Search your favorite movie!"
+            />
+            <button
+              class="bttn fa-solid fa-magnifying-glass"
+              type="submit"
+            ></button>
+          </div>
+
+          <div class="search-list" id="search-list">
+            <!-- LIST ITEM MULAI DARI SINI -->
+
+            <!-- <div class="search-list-item">
+              <div class="search-item-thumbnail">
+                <img src="./assets/Severance.jpg" />
+              </div>
+
+              <div class="search-item-info">
+                <h3>Severance</h3>
+                <p>2022</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Search Container -->
+
+      <!-- Start of Movie Result Container -->
+      <div class="result-container">
+        <div class="result-grid" id="result-grid">
+          <!-- RESULT SEARCH DETAILS MULAI DARI SINI -->
+
+          <!-- <div class="movie-poster">
+            <img src="./assets/Severance.jpg" />
+          </div>
+
+          <div class="movie-info">
+            <h3 class="movie-title">Severance</h3>
+            <ul class="movie-general-info">
+              <li class="year"><b>Year:</b> 2022</li>
+              <li class="rated"><b>Ratings:</b> PG-13</li>
+              <li class="released"><b>Released:</b> 27 Nov 2022</li>
+            </ul>
+
+            <p class="genre"><b>Genre:</b> Action</p>
+            <p class="writer"><b>Writer:</b> Tara westover</p>
+            <p class="actor"><b>Actors:</b> Nafriel Ramadhan, Nafisa</p>
+            <p class="plot">
+              <b>Plot:</b> Mark leads a team of office workers whose memories
+              have been surgically divided between their work and personal
+              lives. When a mysterious colleague appears outside of work, it
+              begins a journey to discover the truth about their jobs.
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <!-- End of Movie Result Container -->
+    </div>
+    <!-- End WHOLE Container -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
